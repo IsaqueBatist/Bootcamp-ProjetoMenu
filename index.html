@@ -5,37 +5,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+
   <title>Menu</title>
 </head>
 
 <body>
   <div class="container">
     <div class="image">
-      <img src="" alt="">
-    </div>
-    <div class="main-title"></div>
-    <div class="main-course">
-      <div class="main-course-title"></div>
-      <div class="main-course-subtitle"></div>
-      <div class="card1"></div>
-      <div class="card2"></div>
-      <div class="card3"></div>
 
     </div>
-    <div class="follow-up">
-      <div class="follow-up-title"></div>
-      <div class="follow-up-subtitle"></div>
-      <div class="card4"></div>
-      <div class="card5"></div>
-      <div class="card6"></div>
+    <div class="main-title1">Menu - Faça a sua Escolha</div>
+    <div class="main">
+      <div class="main-title"><strong>Prato Principal</strong></div>
+      <div class="main-subtitle">Todos os pratos acompanham arroz, feijão e a sobremesa do dia</div>
+      <div class="cards">
+        <div class="card">
+          <div class="food" id="bife"></div>
+          <div class="details">
+            <h3>Bife com batata</h3>
+            <p class="price">R$30,00</p>
+            <div class="number"></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="food" id="coxa"></div>
+          <div class="details">
+            <h3>Coxa de Frango Crocante</h3>
+            <p class="price">R$25,00</p>
+            <div class="num"></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="food" id="panela"></div>
+          <div class="details">
+            <h3>Carne de Panela</h3>
+            <p class="price">R$22,0</p>
+            <div class="number"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="main">
+      <div class="main-title"><strong>Acompanhamentos</strong></div>
+      <div class="main-subtitle">Porções para uma pessoa</div>
+      <div class="cards">
+        <div class="card">
+          <div class="food" id="farofa"></div>
+          <div class="details">
+            <h3>Farofa</h3>
+            <p class="price">R$10,00</p>
+            <div class="number"></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="food" id="salada"></div>
+          <div class="details">
+            <h3>Salada</h3>
+            <p class="price">R$8,00</p>
+            <div class="number"></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="food" id="torresmo"></div>
+          <div class="details">
+            <h3>Torresmo</h3>
+            <p class="price">R$12,00</p>
+            <div class="number"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="personal-data">
+      <div class="personal-data-title">Dados Pessoais</div>
       <form action="">
 
-        
+        <input type="text" name="name" id="iname" required placeholder="Name">
+        <input type="number" name="phone-number" id="iphone-number" required placeholder="Phone number">
+        <input type="email" name="mail" id="imail" required placeholder="email">
       </form>
     </div>
-    <div class="calc"></div>
+      <input type="submit" value="Calcular" class="button-calc">
+    <div class="calc">
+      
+    </div>
   </div>
 </body>
 

@@ -1,14 +1,180 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  color: white;
+}
 
 :root {
-  --cor1: #F24452;
-  --cor2: #BF9C88;
-  --cor3: #BF532C;
-  --cor4: #401C0F;
-  --cor5: #A65E44;
-  --sombra1: #f2445379;
-  --sombra2: #BF9C8879;
-  --sombra3: #BF532C79;
-  --sombra4: #401C0F79;
-  --sombra5: #A65E4479;
+  --cor1: #712773;
+  --cor2: #89888C;
+  --cor3: #D7D7D9;
+  --cor4: #575859;
+  --cor5: #090D0C;
+  --sombra1: #c21fc77e;
+  --sombra2: #89888C79;
+  --sombra3: #D7D7D979;
+  --sombra4: #57585979;
+  --sombra5: #090D0C79;
+}
+
+body {
+  background: black url('imagens/cores.jpg') no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.image {
+  background: black url('imagens/home.jpg');
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: var(--cor5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border-radius: 10px;
+  width: 50vw;
+
+  margin-top: 300px;
+
+
+
+}
+
+.main-title1 {
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.main {
+  background-color: var(--cor2);
+  padding: 20px;
+  height: 370px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.main-subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: 0px 0;
+}
+
+.card {
+  background-color: var(--cor5);
+  box-shadow: -1px -2px 20px 1px black;
+  width: 28%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.food {
+  background: black url('imagens/bife.jpg');
+  background-size: cover;
+  height: 200px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+#coxa {
+  background: url('imagens/coxa.jpg');
+  background-size: cover;
+}
+
+#panela {
+  background: black url('imagens/panela.jpg') no-repeat;
+  background-size: cover;
+}
+
+#farofa {
+  background: black url('imagens/farofa.jpg') no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+#salada {
+  background: black url('imagens/salad.jpg') no-repeat;
+  background-size: cover;
+}
+
+#torresmo {
+  background: black url('imagens/torresmo.jpg') no-repeat;
+  background-size: cover;
+}
+
+.details {
+  text-align: center;
+  margin-top: 0;
+  font-size: 13px;
+  color: white;
+}
+
+.price {
+  color: var(--cor1);
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.personal-data {
+  background: var(--cor2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.personal-data-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+input {
+  width: 90%;
+  padding: 3px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+}
+
+input:focus {
+  background-color: var(--sombra1);
+}
+
+.button-calc {
+  width: 100%;
+  margin-top: 10px;
+  background-color: var(--cor1);
+  color: white;
+  padding: 10px;
+
 }
