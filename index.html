@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/quantityBox.css">
   <title>Menu</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
 </head>
 
 <body>
@@ -32,7 +34,7 @@
           <div class="details">
             <h3>Coxa de Frango Crocante</h3>
             <p class="price">R$25,00</p>
-            <div class="num"></div>
+            <div class="number"></div>
           </div>
         </div>
         <div class="card">
@@ -81,15 +83,19 @@
       <form action="">
 
         <input type="text" name="name" id="iname" required placeholder="Name">
-        <input type="number" name="phone-number" id="iphone-number" required placeholder="Phone number">
+        <input type="text" name="phone" id="iphone" placeholder="Phone number">
         <input type="email" name="mail" id="imail" required placeholder="email">
       </form>
     </div>
-      <input type="submit" value="Calcular" class="button-calc">
+    <input type="submit" value="Calcular" class="button-calc">
     <div class="calc">
-      
+
     </div>
   </div>
+
+  <script type="text/javascript">
+    $("#iphone").mask("(00) 0000-0000")
+  </script>
 </body>
 
 </html>

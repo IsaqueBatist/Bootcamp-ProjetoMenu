@@ -22,7 +22,7 @@
 }
 
 body {
-  background: black url('imagens/cores.jpg') no-repeat;
+  background: black url('../imagens/cores.jpg') no-repeat;
   background-position: center top;
   background-size: cover;
   height: 100vh;
@@ -30,7 +30,7 @@ body {
 }
 
 .image {
-  background: black url('imagens/home.jpg');
+  background: black url('../imagens/home.jpg');
   width: 100%;
   height: 200px;
   background-size: cover;
@@ -93,7 +93,7 @@ body {
 }
 
 .food {
-  background: black url('imagens/bife.jpg');
+  background: black url('../imagens/bife.jpg');
   background-size: cover;
   height: 200px;
   padding: 10px;
@@ -101,28 +101,28 @@ body {
 }
 
 #coxa {
-  background: url('imagens/coxa.jpg');
+  background: url('../imagens/coxa.jpg');
   background-size: cover;
 }
 
 #panela {
-  background: black url('imagens/panela.jpg') no-repeat;
+  background: black url('../imagens/panela.jpg') no-repeat;
   background-size: cover;
 }
 
 #farofa {
-  background: black url('imagens/farofa.jpg') no-repeat;
+  background: black url('../imagens/farofa.jpg') no-repeat;
   background-size: cover;
   background-position: top center;
 }
 
 #salada {
-  background: black url('imagens/salad.jpg') no-repeat;
+  background: black url('../imagens/salad.jpg') no-repeat;
   background-size: cover;
 }
 
 #torresmo {
-  background: black url('imagens/torresmo.jpg') no-repeat;
+  background: black url('../imagens/torresmo.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -151,6 +151,10 @@ body {
   font-weight: bolder;
 }
 
+input[type=button] {
+  width: 10px;
+}
+
 form {
   display: flex;
   align-items: center;
@@ -159,6 +163,7 @@ form {
 }
 
 input {
+  color: black;
   width: 90%;
   padding: 3px;
   outline: none;
