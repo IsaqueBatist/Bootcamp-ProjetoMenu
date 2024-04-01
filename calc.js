@@ -16,7 +16,7 @@ function calc() {
     var price = input.getAttribute('data-price')
     var quant = input.value
     if (quant != 0) {
-      resp.innerHTML += `<li>Prato: ${prato} Preço unitário: ${formater.format(price)} - Quantidade ${quant} - Total ${formater.format(Number(price) * Number(quant))} <br>`
+      resp.innerHTML += `<li>Prato: ${prato}, Preço unitário: ${formater.format(price)} - Quantidade ${quant} - Total ${formater.format(Number(price) * Number(quant))} <br>`
       total += Number(price) * Number(quant)
     }
   }
